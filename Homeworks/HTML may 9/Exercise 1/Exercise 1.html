@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+        .sizing {
+            padding-left: 10px;
+            font-size: large;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .paragraphs {
+            border: 1px solid aliceblue;
+            
+        }
+        a {
+            color: aliceblue;
+            width: 50%;
+            font-size: large;
+            margin-left: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 1px solid aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="sizing" style="padding-left: 1px;">
+        <h2 style="font-weight: bold; color: orange; font-size: larger;">Block-level</h2>
+    </div>
+
+    <p class="sizing paragraphs" style="color: aliceblue;">This is a paragraph.</p>
+    <p class="sizing paragraphs" style="color: aliceblue;">This is another paragraph.</p>
+    <p class="sizing paragraphs" style="color: aliceblue;">Paragraphs are block-level elements, so they stack vertically.</p>  
+
+    <div class="sizing"  style="padding-left: 1px;">
+        <h2 style="font-weight: bold; color: orange; font-size: larger;">Inline</h2>
+    </div> 
+    
+    <div style="padding-left: 360px; width: 50%;">
+        <a>Links are</a><a>Inline elements,</a><a>so they fit side-by-side.</a>
+    </div>
+
+</body>
+</html>

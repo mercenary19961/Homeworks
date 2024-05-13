@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {background-color: green;}
+        div a {
+            color: white;
+            padding: 15px;
+            display: inline-block;
+        }
+        ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {display: inline-block;}
+        ul li:hover {background: green;}
+        ul li:hover ul {display: block;}
+        ul li ul {
+            position: absolute;
+            width: 100px;
+            display: none;
+        }
+        ul li ul li {
+            background: green;
+            display: block;
+        }
+        ul li ul li a {display: block !important;}
+        ul li ul li:hover {background: green;}
+    </style>
+</head>
+<body>
+    <div>
+        <a>Home</a>
+        <a>About</a>
+        <ul>
+            <li>Products</li>
+            <li>Enguneering</li>
+            <li>Telecom</li>
+            <li>Energy</li>
+            <li>Finance</li>
+            <li>Consultancy</li>
+        </ul>
+        <a>Services</a>
+        <a>Contact</a>
+    </div>
+</body>
+</html>

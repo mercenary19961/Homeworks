@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        form {
+            background-color: white;
+            border: none;
+            text-align: center;
+            width: auto;
+            margin: 0 20%;
+        }
+        div {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        label {
+            text-align: left;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+        <hr>
+        <div>
+            <p style="text-align: center;">Let us know how we can improve freeCodeCamp</p>
+        </div>
+        <div>
+            <label>*Name:  </label>
+            <input type="text" name="Name" placeholder="Enter your name"><br>      
+        </div>
+        <div>
+            <label>*Email:  </label>
+            <input type="text" name="Emale" placeholder="Enter you Email">
+        </div>
+        <div>
+            <label>*Age:  </label>
+            <input type="number" name="Age" placeholder="Age">
+        </div>
+        <div>
+            <label>Which best option describes your current role?          </label>
+            <select name="student">Student</select>
+        </div>
+        <div>
+            <label>* How likely is that you would recomemend freeCodeCamp to a friend?</label>
+            <input type="radio" value="defenitly">
+            <label>Defenitly </label<br>
+        </div>
+        <div>
+            <input type="radio" value="Maybe">
+            <label>Maybe </label<br>
+        </div>  
+        <div>      
+            <input type="radio" value="Not sure">
+            <label>Not sure </label<br>    
+        </div>
+        <div>
+            <label>What do you like most in FCC:</label>
+            <select>select an option</select>
+        </div>
+        <div>
+            <label>
+                things that should be improved in the future (check all that apply)
+            </label>
+            <input type="radio" value="Front-end projects">
+            <label>Front-end projects </label<br>
+        </div>
+        <div>
+            <input type="radio" value="back-end projects">
+            <label>back-end projects </label<br>
+        </div>
+        <div>
+            <input type="radio" value="data visulization">
+            <label>data visulization </label<br>
+        </div>
+    </form>
+</body>
+</html>
