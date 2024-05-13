@@ -5,47 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {background-color: green;}
-        div a {
-            color: white;
-            padding: 15px;
-            display: inline-block;
-        }
-        ul {
-            display: inline;
+        body {
             margin: 0;
-            padding: 0;
         }
-        ul li {display: inline-block;}
-        ul li:hover {background: green;}
-        ul li:hover ul {display: block;}
-        ul li ul {
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 900px;
+            margin: 0;
+        }
+        div {
             position: absolute;
+        }
+        .top {
+            background-color: green;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .first {
+            background-color: green;
             width: 100px;
-            display: none;
+            height: 50px;
+            top: 0;
+            left: 100px;
         }
-        ul li ul li {
-            background: green;
-            display: block;
+        .second {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            top: 0;
+            left: 200px;
         }
-        ul li ul li a {display: block !important;}
-        ul li ul li:hover {background: green;}
+        .third {
+            background-color: green;
+            width: 80px;
+            height: 220px;
+            top: 0;
+            left: 300px;
+        }
+        .fourth {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            top: 0;
+            left: 400px;
+        }
+        .fifth {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            top: 0;
+            left: 500px;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <a>Home</a>
-        <a>About</a>
-        <ul>
-            <li>Products</li>
-            <li>Enguneering</li>
-            <li>Telecom</li>
-            <li>Energy</li>
-            <li>Finance</li>
-            <li>Consultancy</li>
-        </ul>
-        <a>Services</a>
-        <a>Contact</a>
+    <div class="container">
+        <div class="top">
+
+        </div>
+        <div class="first">
+            <p>Home</p>
+        </div>
+        <div class="second">
+            <p>Submit</p>
+        </div>
+        <div class="third">
+            <p style="color: yellow;">Products</p>
+            <p>Enguneering</p>
+            <p>Telecom</p>
+            <p>Energy</p>
+            <p>Finance</p>
+            <p>Consultancy</p>
+        </div>
+        <div class="fourth">
+            <p>Services</p>
+        </div>
+        <div class="fifth">
+            <p>Contact</p>
+        </div>
     </div>
 </body>
 </html>
