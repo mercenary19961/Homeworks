@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            width: 1500px;
+            height: 100vh;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+        .right {
+            width: 45%;
+            height: 100vh;
+        }
+        .left {
+            width: 55%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+        .flex2-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+        }
+        .text {
+            width: 48%;
+            height: 30px;
+            margin-left: 1px;
+        }
+        .img1 {
+            width: 100%;
+            height: 100vh;
+        } 
+        p {
+            margin-block-start: 0;
+        }
+        .black {
+            font-weight: bold;
+            font-size: 18px;
+            color: rgba(14, 14, 14, 0.589);
+        }
+        .red {
+            font-weight: bold;
+            font-size: 18px;
+            color: red;
+        }
+        .icon {
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left">
+            <div style="margin-block-start: 0;">
+                <p style="color: rgb(32, 144, 209); font-weight: bold; font-family: sans-serif;">ABOUT US</p>
+            </div>
+            <div style="width: 95%; height: 23%;">
+                <P style="font-size: 40px; font-weight: bold; letter-spacing: 3px; font-family: sans-serif;">
+                    Our experienced instructors are huge to help you achieve your language goals
+                </P>
+            </div>
+            <div>
+                <p style="margin-right: 15px; font-family: sans-serif; color: gray;">
+                    Welcome to <span class="black">Hi Five</span>, your gateway to mastering the English language! At Hi Five, 
+                    we're dedicated to providing top-quality English language education to students worldwide. 
+                    Whether you're a beginner looking to start your language learning journey or an advanced learner 
+                    aiming to refine your skills, our experienced instructors are here to guide you every step of the way.
+                    Our interactive online platform offers personalized lessons tailored to your individual learning style and goals. 
+                    From grammar and vocabulary to speaking and listening comprehension, our comprehensive curriculum covers all 
+                    aspects of the English language. With Hi Five, you'll not only enhance your language proficiency but also gain 
+                    the confidence to communicate effectively in any situation.Join us today and experience the difference with 
+                    our <span class="black">offer of </span><span class="red">free trial sessions </span><span class="black">to new
+                    students.</span> Dive into our engaging lessons, interact with our passionate instructors, and discover 
+                    the joy of learning English with Hi Five. Don't miss this opportunity to take your language skills to new heights. 
+                    Sign up now for your free trial and embark on a rewarding language learning journey with Hi Five!
+                </p>
+            </div>
+            <div class="flex2-container">
+                <div class="text">✔️ Correction of mistakes</div>
+                <div class="text">✔️ Continuous improvment</div>
+                <div class="text">✔️ Profissional instructors</div>
+                <div class="text">✔️ Fair prices</div>
+                <div class="text">✔️ Online sessions</div>
+                <div class="text">✔️ Anytime you want</div>
+                <div class="text">✔️ One to one</div>
+                <div class="text">✔️ Anywhere</div>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 60px; height: 60px; background-color: rgb(32, 144, 209); display: flex;">
+                    <img src="/Exercise 5/images/call-phone-telephone_108619.png" alt="phone call icone" title="phone icon" class="icon"></div>
+                <div style="display: flex; flex-direction: column; width: 300px; height: 60px;">
+                    <div>
+                        <p style="color: rgb(78, 78, 78); margin-inline-start: 0; margin-block-end: 15px; margin-left: 15px;">Call to ask any question</p>
+                    </div>
+                    <div>
+                        <p style="color: rgb(32, 144, 209);margin-inline-start: 0; margin-block-end: 0; margin-left: 15px; font-size: 20px; font-weight: bold;">+962779697216</p>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgb(32, 144, 209); width: 200px; height: 60px; margin-top: 20px;">
+                <p style="color: white; padding-left: 75px; padding-top: 20px;">Free Trial</p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="/Exercise 5/images/campaign-creators-e6n7uoEnYbA-unsplash.jpg" alt="Office team meeting" title="Office team meeting" class="img1">
+        </div>
+    </div>
+</body>
+</html>
