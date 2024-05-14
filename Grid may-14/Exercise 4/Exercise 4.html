@@ -19,10 +19,13 @@
             height: 97vh;
         }
         .grid-container > div {
-            background-color: lightblue;
+            background-color: rgb(67, 168, 230);
             display: flex;
             justify-content: center;
             align-items: center;
+            color: rgba(245, 245, 245, 0.766);
+            font-family: sans-serif;
+            border-radius: 8px;
         }
         .span60 {
             grid-column: span 60;
@@ -46,7 +49,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="span60">60 GS is starter kit for CSS Grid</div>
+        <div class="span60" style="font-size: 2rem;">60 GS is starter kit for CSS Grid</div>
 
         <div class="span30">1</div>
         <div class="span30">2</div>
@@ -73,7 +76,10 @@
         <div class="span10">5</div>
         <div class="span10">6</div>
 
-        <div class="span60">6</div>
+        <div class="span60" style="display: flex; flex-direction: column; font-size: 2rem;">
+            <p>Why 60?</p>
+            <p>Because the number 60 is dividable by 2,3,4,5 and 6.</p>
+        </div>
 
     </div>
 </body>
