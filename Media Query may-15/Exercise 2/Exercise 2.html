@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+        .flex-container {
+            display: grid;
+            gap: 2% 2%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 9fr;
+            width: 99%;
+            height: 97vh;
+        }
+        
+        .first_div {
+            grid-column: span 4;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            border: 3px black solid;
+            border-right: none;
+            color: white;
+            background-color: rgb(48, 47, 47);
+        }
+        .second_div {
+            grid-column: span 3;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .third_div {
+            border: 3px black solid;
+            color: white;
+            padding: 3%;
+            margin-right: 2%;
+            text-align: center;
+            background-color: rgb(48, 47, 47);
+        }
+
+        .first_text {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            padding-left: 1.5%;
+            padding-top: 1.1%;
+        }
+        .second_text {
+            display: flex;
+            flex-direction: row;
+            padding-top: 1.1%;
+            width: 15%;
+        }
+        .right_text {
+            padding-left: 2%;
+            width: 100%;
+            padding-top: 2%;
+        }
+
+        .text_upper_part {
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+        }
+        .boxes_lower_part {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 70%;
+        }
+        .text_upper_part > div {
+            color: rgb(86, 86, 86);
+            height: 32%;
+            padding-top: 2%;
+            padding-left: 1.2%;
+        }
+        .boxes_lower_part > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30%;
+            height: 45%;
+            margin: 1%;
+            border: 3px black solid;
+        }
+        .boxes_lower_part > div > div {
+            display: flexbox;
+            justify-content: start;
+            align-items: center;
+        }
+        .top_box {
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: rgb(48, 47, 47);
+            font-size: 1.5rem;
+            height: 30%;
+            padding-left: 10%;
+        }
+        .bottom_box {
+            display: flex;
+            height: 65%;
+            justify-content: center;
+            color: rgb(86, 86, 86);
+            padding-left: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="first_div">
+            <div class="first_text">My Website</div>
+            <div class="second_text">
+                <P class="right_text">Link 1</P>
+                <P class="right_text">Link 2</P>
+                <P class="right_text">Link 3</P>
+            </div>
+        </div>
+
+        <div class="second_div">
+            <div class="text_upper_part">
+                <div style="font-size: 2rem; color: rgb(70, 70, 70);">This is the main heading</div>
+                <div>Vegetables are essential for a balanced diet, providing vitamins, minerals, and fiber. From crunchy carrots to leafy greens, 
+                    they offer a variety of flavors and textures for delicious, nutritious meals.</div>
+                <div>Nature's bounty, are packed with essential nutrients like vitamins, minerals, and antioxidants. Incorporating a colorful array 
+                    of veggies into your diet promotes overall health and well-being, supporting digestion, immunity, and vitality for a vibrant life.</div>
+            </div>
+            <div class="boxes_lower_part">
+                <div>
+                    <div class="top_box">
+                        <p>Card One</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Two</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Three</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Four</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis,
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Five</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third_div">
+            <div>Have you discovered all of the other excellent content on this website?</div>
+        </div>
+    </div>
+</body>
+</html>
