@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100vh;
+        }
+        .flex-container > div {
+            display: flex;
+            width: 32%;
+            height: 40%;
+            border: 1px solid lightgray;
+            border-radius: 1%;
+        }
+        .container_1 {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            padding-left: 4%;
+        }
+        .left_pic_width {
+            width: 40%;
+            height: 100%;
+        }
+        .first_paragraph {
+            display: flex;
+            color: grey;
+            width: 100%;
+            height: 10%;
+            justify-content: end;
+        }
+        .small_pic {
+            height: auto;
+            width: 10%;
+            padding-top: 3%;
+        }
+        .small_pic_text {
+            width: 80%;
+            height: auto;
+            padding-top: 3%;
+        }
+        .second_paragraph {
+            font-size: 1.2rem;
+            height: 15%;
+            padding-top: 2%;
+            color: black;
+            font-weight: bold;
+        }
+        .third_paragraph {
+            padding-top: 10%;
+            height: 30%;
+            color: gray;
+        }
+        .fourth_paragraph {
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            height: 40%;
+        }
+        .profile_pic {
+            width: 20%;
+            height: 50%;
+        }
+        .profile_pic_text {
+            padding-left: 5%;
+        }
+        .date {
+            color: gray;
+        }
+        #middle_div {
+            height: 50%;
+        }
+
+        @media (max-width: 900px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-container > div {
+            display: flex;
+            width: 32%;
+            height: 30%;
+            border: 1px solid lightgray;
+            border-radius: 1%;
+            }
+            .first_paragraph {
+            font-size: 0.7rem;    
+            }
+            .second_paragraph {
+            font-size: 0.7rem;
+            height: 7%;
+            padding-top: 25%;
+            }
+            .third_paragraph {
+            padding-top: 10%;
+            font-size: 0.6rem;
+            height: 30%;
+            color: gray;
+            }
+            .fourth_paragraph {
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            font-size: 0.7rem;
+            height: 40%;
+            }    
+        }
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-container > div {
+            display: flex;
+            width: 32%;
+            height: 30%;
+            border: 1px solid lightgray;
+            border-radius: 1%;
+            }
+            .first_paragraph {
+            font-size: 0.5rem;    
+            }
+            .second_paragraph {
+            font-size: 0.5rem;
+            height: 7%;
+            padding-top: 25%;
+            }
+            .third_paragraph {
+            padding-top: 10%;
+            font-size: 0.4rem;
+            height: 30%;
+            color: gray;
+            }
+            .fourth_paragraph {
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            font-size: 0.5rem;
+            height: 40%;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>
+            <div class="left_pic_width">
+                <img src="/Exercise 1/images/first_img.jpg" width="100%" height="100%">
+            </div>
+
+            <div class="container_1">
+                <div class="first_paragraph">
+                    <div class="small_pic"><img src="/Exercise 1/images/lock-outlined-padlock-symbol-for-security-interface_icon-icons.com_57803.png" width="40%" height="70%"> </div>
+                    <div class="small_pic_text"> Members only</div>
+                </div>
+                <div class="second_paragraph">
+                    Best Mountain Trails 2020
+                </div>
+                <div class="third_paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque cumque suscipit facilis, kadj ekfn mggdas cascwis.
+                </div>
+                <div class="fourth_paragraph">
+                    <div class="profile_pic">
+                        <img src="/Exercise 1/images/man_person_1.png" width="100%" height="100%">
+                    </div>
+                    <div class="profile_pic_text">
+                        <p>John Smith</p>
+                        <p class="date">Aug 18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="left_pic_width">
+                <img src="/Exercise 1/images/second_img.jpg" width="100%" height="100%">
+            </div>
+
+            <div class="container_1">
+                <div class="second_paragraph">
+                    15 Rivers in Norway
+                </div>
+                <div class="third_paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque cumque suscipit facilis, kadj ekfn mggdas cascwis.
+                </div>
+                <div class="fourth_paragraph" id="middle_div">
+                    <div class="profile_pic">
+                        <img src="/Exercise 1/images/girl_female_1.png" width="100%" height="100%">
+                    </div>
+                    <div class="profile_pic_text">
+                        <p>Karen Johnson</p>
+                        <p class="date">Aug 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="left_pic_width">
+                <img src="/Exercise 1/images/third_img.jpg" width="100%" height="100%">
+            </div>
+
+            <div class="container_1">
+                <div class="first_paragraph">
+                    <div class="small_pic"><img src="/Exercise 1/images/lock-outlined-padlock-symbol-for-security-interface_icon-icons.com_57803.png" width="40%" height="70%"> </div>
+                    <div class="small_pic_text"> Members only</div>
+                </div>
+                <div class="second_paragraph">
+                    Best Mountain Trails 2020
+                </div>
+                <div class="third_paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque cumque suscipit facilis, kadj ekfn mggdas cascwis.
+                </div>
+                <div class="fourth_paragraph">
+                    <div class="profile_pic">
+                        <img src="/Exercise 1/images/man_person_2.png" width="100%" height="100%">
+                    </div>
+                    <div class="profile_pic_text">
+                        <p>Rafael Martin</p>
+                        <p class="date">Aug 18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

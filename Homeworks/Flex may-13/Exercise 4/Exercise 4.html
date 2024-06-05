@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(230, 230, 167);
+        }
+        .flex-container {
+            margin-left: 550px;
+            margin-top: 50px;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            border: rgb(233, 233, 131) 1px solid;
+            border-radius: 10%;
+            box-shadow: 2px 2px 2px 2px gainsboro;
+        }
+        .flex-2-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .flex-3-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div {
+            width: 100%;
+            height: 110px;
+            margin-left: 20px;
+            margin-right: 28px;
+            background-color: white;
+            border-radius: 10%;
+            justify-content: left;
+            align-items: baseline;
+            border-top-left-radius: 100% 100%; 
+            border-top-right-radius: 100% 100%;
+        }
+        .borders {
+            border-bottom: 1px solid lightgrey;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin-right: 30px;
+        }
+        p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        .p1 {
+            margin-top: 30px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        .p2 {
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="borders">
+            <div class="flex-2-container">
+                <img src="/Exercise 4/image/profile.png">
+                <div class="flex-3-container">
+                    <p class="p1">User#1</p><br>
+                    <p class="p2">Amman, Jordan</p>
+                </div>
+                
+            </div>
+        </div> 
+        <div class="borders">
+            <div class="flex-2-container">
+                <img src="/Exercise 4/image/profile.png">
+                <div class="flex-3-container">
+                    <p class="p1">User#2</p><br>
+                    <p class="p2">Salt, Jordan</p>
+                </div>
+            </div>    
+        </div>
+        <div class="borders">
+            <div class="flex-2-container">
+                <img src="/Exercise 4/image/profile.png">
+                <div class="flex-3-container">
+                    <p class="p1">User#3</p><br>
+                    <p class="p2">Zarqa, Jordan</p>
+                </div>
+            </div>    
+        </div>
+        <div class="borders">
+            <div class="flex-2-container">
+                <img src="/Exercise 4/image/profile.png">
+                <div class="flex-3-container">
+                    <p class="p1">User#4</p><br>
+                    <p class="p2">Irbid, Jordan</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

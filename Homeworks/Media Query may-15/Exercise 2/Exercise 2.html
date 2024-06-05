@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+        .flex-container {
+            display: grid;
+            gap: 2% 2%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 9fr;
+            width: 99%;
+            height: 97vh;
+        }
+        
+        .first_div {
+            grid-column: span 4;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            border: 3px black solid;
+            border-right: none;
+            color: white;
+            background-color: rgb(48, 47, 47);
+        }
+        .second_div {
+            grid-column: span 3;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .third_div {
+            border: 3px black solid;
+            color: white;
+            padding: 3%;
+            text-align: center;
+            background-color: rgb(48, 47, 47);
+        }
+
+        .first_text {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            padding-left: 1.5%;
+            padding-top: 1.1%;
+        }
+        .second_text {
+            display: flex;
+            flex-direction: row;
+            padding-top: 1.1%;
+            width: 25%;
+        }
+        .right_text {
+            padding-left: 2%;
+            width: 100%;
+            padding-top: 2%;
+        }
+
+        #main_heading {
+            font-size: 2rem;
+            color: rgb(70, 70, 70);
+        }
+        .left_upper_div {
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+        }
+        .left_lower_div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 70%;
+        }
+        .left_upper_div > div {
+            color: rgb(86, 86, 86);
+            height: 32%;
+            padding-top: 1%;
+            padding-left: 1.2%;
+        }
+        .left_lower_div > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            width: 30%;
+            height: 45%;
+            margin: 1%;
+            border: 3px black solid;
+        }
+        .left_lower_div > div > div {
+            display: flexbox;
+            justify-content: start;
+            align-items: center;
+        }
+        .top_box {
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: rgb(48, 47, 47);
+            font-size: 1.5rem;
+            height: 30%;
+            padding-left: 10%;
+        }
+        .bottom_box {
+            display: flex;
+            height: 65%;
+            justify-content: center;
+            color: rgb(86, 86, 86);
+            padding-left: 2%;
+        }
+
+        @media (max-width: 950px) {
+            .first_div {
+            justify-content: space-around;
+            font-size: 0.7rem;
+            }
+            #main_heading {
+            font-size: 1.5rem;
+            color: rgb(70, 70, 70);
+            }
+            .first_text {
+            font-size: 1rem;
+            }
+            .left_upper_div > div {
+            font-size: 0.7rem;    
+            }
+            .left_lower_div > div {
+            font-size: 0.65rem;    
+            }
+            .third_div {
+            font-size: 0.8rem;
+            }
+            .top_box {
+            font-size: 0.9rem;
+            }
+            .bottom_box {
+            font-size: 0.6rem;    
+            }
+        }
+        @media (max-width: 500px) {
+            .flex-container {
+            display: flex;    
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 90vh;
+            }
+            .first_div {
+            grid-column: 1;
+            grid-row: 1;
+            justify-content: space-around;
+            font-size: 0.4rem;
+            height: 5%;
+            width: 100%;
+            }
+            .second_div {
+            height: 90%;
+            }
+            .third_div {
+            height: 5%;
+            width: 93%;
+            }
+            #main_heading {
+            font-size: 1.1rem;
+            color: rgb(70, 70, 70);
+            }
+            .first_text {
+            font-size: 0.7rem;
+            }
+            .left_upper_div > div {
+            font-size: 0.5rem;    
+            }
+            .left_lower_div {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .left_lower_div > div {
+            font-size: 0.6rem;
+            width: 80%;
+            height: 90%;    
+            }
+            .third_div {
+            font-size: 0.6rem;
+            }
+            .top_box {
+            font-size: 0.8rem;
+            }
+            .bottom_box {
+            font-size: 0.4rem;    
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="first_div">
+            <div class="first_text">My Website</div>
+            <div class="second_text">
+                <P class="right_text">Link 1</P>
+                <P class="right_text">Link 2</P>
+                <P class="right_text">Link 3</P>
+            </div>
+        </div>
+
+        <div class="second_div">
+            <div class="left_upper_div">
+                <div id="main_heading">This is the main heading</div>
+                <div>Vegetables are essential for a balanced diet, providing vitamins, minerals, and fiber. From crunchy carrots to leafy greens, 
+                    they offer a variety of flavors and textures for delicious, nutritious meals.</div>
+                <div>Nature's bounty, are packed with essential nutrients like vitamins, minerals, and antioxidants. Incorporating a colorful array 
+                    of veggies into your diet promotes overall health and well-being, supporting digestion, immunity, and vitality for a vibrant life.</div>
+            </div>
+            <div class="left_lower_div">
+                <div>
+                    <div class="top_box">
+                        <p>Card One</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Two</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Three</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Four</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis,
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+                <div>
+                    <div class="top_box">
+                        <p>Card Five</p>
+                    </div>
+                    <div class="bottom_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis hic nihil ducimus inventore? Similique temporibus blanditiis, 
+                        corporis vel nam incidunt dolores maiores dicta reiciendis!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third_div">
+            <div>Have you discovered all of the other excellent content on this website?</div>
+        </div>
+    </div>
+</body>
+</html>
